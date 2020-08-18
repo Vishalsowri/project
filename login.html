@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>LOGIN</title>
+    <style>
+        body {
+            background-image: url(key.jpg);
+            background-size:cover;
+        }
+
+     
+
+
+        h1 {
+            font-family:'Times New Roman', Times, serif;
+            color: navy;
+        }
+        
+.invalid-username,.empty-password,.invalid-password
+{
+    color: white;
+}
+
+
+
+.hiddenElement{
+    display: none;
+}
+        
+
+    </style>
+
+   
+
+
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div id="game" class="row">
+            <div class="col-md-2" style="position: relative;left: 500px;right: 500px;top: 50px;">
+                <img src="gamezone.jpg" alt="Game zone" class="img-fluid"   />
+                
+            </div>
+            <div class="col-md-2" style="position: relative;left:750px;right: 750px;top:50px;">
+                <img src="gz1.jpg" alt="Game" class="img-fluid"   />
+            </div>
+           
+        </div>
+    </div>
+    <div>
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-3  border border-5  text-light" style="background-color:rgb(116, 0, 0); position:relative; left:725px; top:150px;">
+                    <h1 class="text-light"> <strong>Login Page</strong></h1>
+                    <form>
+        
+                        
+                            <div class="form-group row">
+                                <label class="col-4" for="txtUserName"> UserName</label>
+                                <input type="text" id="txtUserName" class="form-control col-7"/>
+                                <div class="invalid-username hiddenElement" id="errorDivUsername"> Please enter the username</div>
+    
+                            </div>
+                            <div class="form-group row">
+                                <label for="txtPassword" class="col-4">Password</label>
+                                 <input type="password" id="txtPassword" class="form-control col-7"/>
+                                 <div class="empty-password hiddenElement" id="errorDivPassword"> Please enter the password</div>
+                                 <div class="invalid-password hiddenElement" id="errorDivPasswordStrength"> Password should contain a lowercase, a uppercase, a special char and number</div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="form-check-label col"><input type="checkbox" />Remember me </label>
+    
+                                
+                            </div>
+                            <div class="form-group row">
+                                <input type="button"  value="Login" class="btn btn-primary col-6" onclick="validationForm();" />
+                                <input type="reset"  value="Reset" class="btn btn-primary col-5 ml-2"/>
+                            </div>
+                            
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+    <script src="script2.js"></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
